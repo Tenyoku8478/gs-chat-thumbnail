@@ -1,0 +1,1 @@
+setInterval(attachThumbnail, 500);

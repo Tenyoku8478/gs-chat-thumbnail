@@ -1,0 +1,9 @@
+.thumbnailed .msg {
+    vertical-align:text-top;
+}
+.thumbnailed img {
+    vertical-align:text-top;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
