@@ -44,14 +44,6 @@ function attachThumbnail() {
         getThumbnailUrl(userId, function(thumbnail) {
             $this.find('.info').after('<img src="'+thumbnail+'" />');
             $this.removeClass('thumbnailing').addClass('thumbnailed');
-
-            var msgStage = $('.msgStage');
-            var scrollHeight = msgStage[0].scrollHeight;
-            var scrollTop = msgStage.scrollTop();
-            var height = msgStage.height();
-            if(scrollHeight - height - scrollTop <= 20) {
-                msgStage.scrollTop(scrollHeight-height);
-            }
         });
     });
 }

@@ -3,7 +3,7 @@
 
     "name": "GS聊天室頭像套件",
     "description": "為GS聊天室加入顯示使用者大頭貼功能",
-    "version": "0.0.1.2",
+    "version": "0.0.2",
 
     "permissions": [
         "storage",
@@ -17,6 +17,7 @@
         },
         {
             "matches": ["http://gameschool.cc/site/chat/"],
+            "css": ["css/fullpage.css"],
             "js": ["js/fullpage.js"]
         },
         {
