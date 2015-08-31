@@ -3,7 +3,7 @@
 
     "name": "GS聊天室頭像套件",
     "description": "為GS聊天室加入顯示使用者大頭貼功能",
-    "version": "0.0.1.1",
+    "version": "0.0.1.2",
 
     "permissions": [
         "storage",
