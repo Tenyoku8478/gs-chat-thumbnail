@@ -6,4 +6,32 @@
     width: 30px;
     height: 30px;
     margin-left: 5px;
+    backface-visibility: visible !important;
+    animation-name: flipIn;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+}
+
+@keyframes flipIn {
+  from {
+    animation-timing-function: ease-in;
+    transform: perspective(400px) rotate3d(1, 1, 0, -90deg);
+    margin-right: -30px;
+    opacity: 0;
+  }
+
+  40% {
+    animation-timing-function: ease-out;
+  }
+
+  70% {
+    animation-timing-function: ease-in;
+    margin-right: -5px;
+  }
+
+  to {
+    transform: perspective(400px) rotate3d(1, 1, 0, 0deg);
+    margin-right: 0;
+    opacity: 1;
+  }
 }
