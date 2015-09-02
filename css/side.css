@@ -1,6 +1,3 @@
-.chatroom .thumbnailed.msgrow {
-    width: 260px;
-}
 .thumbnailed .msg {
-    max-width: 180px;
+    max-width: 150px;
 }
