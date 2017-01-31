@@ -31,7 +31,7 @@ function cacheThumbnail(name, thumbnail) {
   return new Promise((resolve, reject) => {
     var list = {};
     list[name] = thumbnail;
-    chrome.storage.local.set(list, resolve);
+    chrome.storage.local.set(list, () => resolve(thumbnail));
   });
 }
 
@@ -64,6 +64,10 @@ function getThumbnailUrl(userId, callback) {
         .then((thumbnail) => triggerCallbacks(userIdQueue, thumbnail))
     }
   });
+}
+
+function initThumbnail() {
+  chrome.storage.local.clear();
 }
 
 function attachThumbnail() {
